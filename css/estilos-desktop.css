@@ -1,0 +1,191 @@
+.contenedor{
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+#text-bienvenida{
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    max-width: 1200px;
+}
+
+#text-bienvenida h2{
+    font-size: 7rem;
+}
+
+#text-bienvenida p{
+    text-align: center;
+    font-size: 2rem;
+    max-width: 480px;
+    margin: -2rem auto;
+}
+
+#sobre-mi, #servicios, #preguntas-frecuentes, #gift-card, #contacto{
+    padding: 5rem 0;
+}
+
+#sobre-mi .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 40px;
+}
+
+#sobre-mi h2{
+    font-size: 4rem;
+}
+
+#sobre-mi .contenedor > div{
+    width: 100%;
+    max-width: 50%;
+    margin: auto;
+}
+
+#sobre-mi h3{
+    margin: -1rem 0;
+}
+
+#sobre-mi p{
+    margin-top: 3rem;
+}
+
+#servicios h2{
+    font-size: 4rem;
+}
+
+#servicios h3{
+    font-size: 1.5rem;
+    margin: -1rem;
+}
+
+#servicios .contenedor .columnas{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 3rem;
+}
+
+#servicios .contenedor .columnas > div{
+    width: 580px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 2rem;
+}
+
+#servicios .contenedor .columnas > div h4{
+    font-size: 1.5rem;
+}
+
+#preguntas-frecuentes h2{
+    font-size: 3rem;
+}
+
+#preguntas-frecuentes .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#preguntas-frecuentes article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 280px;
+    height: 256px;
+}
+
+#preguntas-frecuentes article picture{
+    width: 100%;
+}
+
+#preguntas-frecuentes article img{
+    display: block;
+    max-width: 72px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    align-self: flex-end;
+}
+
+#preguntas-frecuentes article div{
+    margin-bottom: 2rem;
+}
+
+#gift-card{
+    background-image: url("../assets/imgs/fondo-giftcard.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
+#gift-card h2{
+    font-size: 4rem;
+}
+
+#gift-card .contenedor div{
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+#gift-card h3{
+    margin-bottom: 1rem;
+}
+
+#gift-card .btn{
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: 1.5rem;
+}
+
+#contacto h2{
+    font-size: 4rem;
+}
+
+#contacto h3{
+    margin-top: -1rem;
+}
+
+#contacto .contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    column-gap: 60px;
+}
+
+.formulario, .nube{
+    margin-top: 2rem;
+}
+
+form{
+    width: 350px;
+}
+
+button[type=submit]{
+    max-width: 140px;
+    margin-left: auto;
+    margin-right: 0;
+}
