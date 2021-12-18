@@ -37,9 +37,9 @@ nav ul{
 }
 
 #sobre-mi{
-    background-image: url("../assets/imgs/fondo-sobremi-todo.jpg");
+    background-image: url("../assets/imgs/fondo-sobremi-mobile.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
 }
 
 #sobre-mi, #servicios, #preguntas-frecuentes, #gift-card, #contacto{
@@ -51,6 +51,8 @@ nav ul{
     justify-content: space-between;
     align-items: center;
     column-gap: 40px;
+    flex-wrap: wrap;
+    row-gap: 80px;
 }
 
 #sobre-mi h2{
@@ -82,9 +84,11 @@ nav ul{
 
 #servicios .contenedor .columnas{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     margin-top: 3rem;
+    flex-wrap: wrap;
+    row-gap: 40px;
 }
 
 #servicios .contenedor .columnas > div{
@@ -110,9 +114,11 @@ nav ul{
 
 #preguntas-frecuentes .contenedor{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 40px;
 }
 
 #preguntas-frecuentes article{

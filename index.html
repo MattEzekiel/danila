@@ -5,14 +5,19 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Soy Danila mamá de Gino y consultora de sueño infantil">
+    <meta name="robots" content="index,follow" />
+    <meta name="keywords" content="Consultora de Sueño Infantil, DANILA, Consultoría personalizada, Plan de sueño con seguimiento, ¿Cuánta duración tiene la consulta?, ¿Es online?, ¿Hasta qué edad se puede
+hacer un plan de sueño?, ¿Se puede hacer previo a la llegada del bebe?, ¿Cuántos días necesita mi hijo
+para cambiar los hábitos y que duerma mejor?"/>
+    <meta name="description" content="Soy Danila mamá de Gino y consultora de sueño infantil"/>
+    <link rel="shortcut icon" href="assets/favico.png" type="image/x-icon">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Danila hs</title>
 </head>
 <body>
     <header>
         <nav>
-            <h1>Danila h2</h1>
+            <h1><span class="sr-only">Danila h2</span><img src="assets/imgs/logo-danila.png" alt="Danila h2 logo"></h1>
             <ul>
                 <li>
                     <a href="#sobre-mi">SOBRE MI</a>
@@ -31,6 +36,7 @@
                 </li>
             </ul>
         </nav>
+        <button type="button" id="hamburguesa" onclick="toggle()">Menú hamburguesa</button>
     </header>
     <main>
         <section id="bienvenidos">
@@ -55,10 +61,14 @@
                 <div>
                     <figure>
                         <picture>
-                            <img src="#" alt="Foto danila">
+                            <img src="assets/imgs/foto-danila.jpg" alt="Foto danila">
                         </picture>
                         <figcaption>Danila Hermida Stubbe <br> Consultora de sueño infantil Certificada</figcaption>
                     </figure>
+                    <picture id="jirafa">
+                        <source srcset="assets/imgs/jirafa-mobile.png" media="(max-width: 768px)">
+                        <img src="assets/imgs/jirafa.png" alt="Jirafa">
+                    </picture>
                 </div>
             </div>
         </section>
@@ -185,4 +195,5 @@
         </div>
     </aside>
 </body>
+<script type="text/javascript" src="js/main.js"></script>
 </html>

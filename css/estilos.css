@@ -1,5 +1,7 @@
 @import "../assets/fonts/stylesheet.css";
 @import "estilos-desktop.css" screen and (min-width: 1200px);
+@import "estilos-tablet.css" screen and (max-width: 1199px) and (min-width: 769px);
+@import "estilos-mobile.css" screen and (max-width: 768px);
 
 *{
     margin: 0;
@@ -22,15 +24,34 @@ a{
     text-decoration: none;
 }
 
-header{
-    background-color: rgba(255,255,255,0.2);
-    position: fixed;
+h1 img{
     width: 100%;
+    max-width: 300px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.2);
+    position: fixed;
+    width: 100vw;
     z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 120px;
+    max-width: 100%;
+    padding: 0 2rem;
 }
 
 nav h1{
@@ -90,10 +111,25 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow-x: hidden;
 }
 
 #sobre-mi h2, #gift-card h2, #gift-card h3{
     color: #6EBAE4;
+}
+
+#sobre-mi figure img{
+    width: 100%;
+}
+
+#sobre-mi .contenedor > div:last-of-type{
+    position: relative;
+}
+
+#jirafa{
+    position: absolute;
+    bottom: 0;
+    right: -50px;
 }
 
 #servicios{

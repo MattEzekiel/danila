@@ -3,43 +3,101 @@
     margin: auto;
 }
 
+header{
+    position: relative;
+    overflow: hidden;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     width: 100%;
+    position: relative;
 }
 
 nav ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 20px;
+    flex-direction: column;
+    row-gap: 20px;
+    position: fixed;
+    top: -150vh;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    transition: 0.5s;
+}
+
+nav li{
+    text-align: center;
+}
+
+nav a {
+    color: white !important;
+    font-size: 2rem;
+}
+
+#gift{
+    width: fit-content !important;
+    padding: 1rem 2rem;
+}
+
+#hamburguesa{
+    position: relative;
+    z-index: 5;
+    height: 50px;
+    width: 50px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 0;
+    background-image: url("../assets/menu.png");
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    filter: invert(1);
+    transition: 0.5s;
+}
+
+nav.active ul{
+    top: 0;
+}
+
+nav.active + #hamburguesa{
+    background-image: url("../assets/close.png");
 }
 
 #text-bienvenida{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    bottom: 20%;
-    left: 10%;
-    max-width: 1200px;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    padding: 0 1rem;
 }
 
 #text-bienvenida h2{
-    font-size: 7rem;
+    font-size: 4rem;
 }
 
 #text-bienvenida p{
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     max-width: 480px;
-    margin: -2rem auto;
+    margin: auto;
 }
 
 #sobre-mi{
-    background-image: url("../assets/imgs/fondo-sobremi-todo.jpg");
+    background-image: url("../assets/imgs/fondo-sobremi-mobile.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
 }
 
 #sobre-mi, #servicios, #preguntas-frecuentes, #gift-card, #contacto{
@@ -51,6 +109,8 @@ nav ul{
     justify-content: space-between;
     align-items: center;
     column-gap: 40px;
+    flex-wrap: wrap;
+    row-gap: 80px;
 }
 
 #sobre-mi h2{
@@ -59,8 +119,8 @@ nav ul{
 
 #sobre-mi .contenedor > div{
     width: 100%;
-    max-width: 50%;
     margin: auto;
+    max-width: 80%;
 }
 
 #sobre-mi h3{
@@ -82,17 +142,19 @@ nav ul{
 
 #servicios .contenedor .columnas{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     margin-top: 3rem;
+    flex-wrap: wrap;
+    row-gap: 40px;
 }
 
 #servicios .contenedor .columnas > div{
-    width: 580px;
+    width: 90%;
     background-color: white;
     border: 1px solid white;
     border-radius: 50px;
-    height: 300px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -110,9 +172,11 @@ nav ul{
 
 #preguntas-frecuentes .contenedor{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 40px;
+    overflow-x: scroll;
 }
 
 #preguntas-frecuentes article{
@@ -120,8 +184,9 @@ nav ul{
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    width: 280px;
+    min-width: 280px;
     height: 256px;
+    margin: 0 1rem 2rem 1rem;
 }
 
 #preguntas-frecuentes article picture{
@@ -154,7 +219,7 @@ nav ul{
 }
 
 #gift-card .contenedor div{
-    max-width: 500px;
+    width: 90%;
     margin: 2rem auto;
 }
 
@@ -179,8 +244,9 @@ nav ul{
 #contacto .contenedor{
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     column-gap: 60px;
+    flex-direction: column;
 }
 
 .formulario, .nube{
@@ -188,7 +254,7 @@ nav ul{
 }
 
 form{
-    width: 350px;
+    width: 100%;
 }
 
 button[type=submit]{
@@ -197,6 +263,12 @@ button[type=submit]{
     margin-right: 0;
 }
 
-#hamburguesa{
-    display: none;
+@media screen and (max-width: 300px) {
+    #text-bienvenida h2{
+        font-size: 3rem;
+    }
+
+    #text-bienvenida p{
+        font-size: 1.5rem;
+    }
 }
