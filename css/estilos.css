@@ -52,6 +52,11 @@ header {
     height: 120px;
     max-width: 100%;
     padding: 0 2rem;
+    transition: 0.5s;
+}
+
+header.scroll{
+    background-color: white;
 }
 
 nav h1{
@@ -253,4 +258,31 @@ button[type=submit]:hover, button[type=submit]:active{
 
 .nube a{
     color: black;
+}
+
+.alert{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 1rem auto;
+    min-height: 60px;
+}
+
+.alert-danger{
+    background-color: rgba(252, 167, 167, 0.84);
+    color: #ff0000;
+}
+
+.alert-success{
+    background-color: rgba(165, 246, 138, 0.84);
+    color: #00b60b;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.empty, .empty:focus{
+    box-shadow: 0 0 10px 5px rgba(248, 89, 89, 0.7);
 }
