@@ -35,7 +35,7 @@ $smtpUsuario = "no-reply@c2090526.ferozo.com";  // Mi cuenta de correo
 $smtpClave = "CRi8iJKb3z";  // Mi contraseña
 
 // Email donde se enviaran los datos cargados en el formulario de contacto
-$emailDestino = "matt.bubello@gmail.com"; //info@danilahs.com.ar
+$emailDestino = "info@danilahs.com.ar";
 
 $mail = new PHPMailer();
 $mail->IsSMTP();

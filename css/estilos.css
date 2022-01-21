@@ -286,3 +286,19 @@ button[type=submit]:hover, button[type=submit]:active{
 .empty, .empty:focus{
     box-shadow: 0 0 10px 5px rgba(248, 89, 89, 0.7);
 }
+
+#form{
+    position: relative;
+}
+
+.loader{
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.2);
+    top: 0;
+    transform: translate(-5%,-5%);
+}

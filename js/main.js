@@ -10,8 +10,22 @@ document.addEventListener('scroll', function () {
 
 const form = document.getElementById('form');
 
+function loader() {
+    let div = document.createElement('div');
+    div.setAttribute('class','loader');
+    div.innerHTML = '<img src="assets/imgs/girafa.gif" alt="Procesando pedido"/>'
+    form.appendChild(div);
+}
+
+function disableLoader() {
+    let div = document.querySelector('.loader');
+    div.remove();
+}
+
 form.addEventListener('submit',(e) => {
     e.preventDefault();
+
+    loader();
 
     let nombre = form.elements['nombre'].value,
         hijo = form.elements['hijo'].value,
@@ -37,6 +51,7 @@ form.addEventListener('submit',(e) => {
         .then(res => {
             /*console.log(res);*/
             respuesta(res);
+            disableLoader();
         })
         .catch(onerror => {
             console.error(onerror);
