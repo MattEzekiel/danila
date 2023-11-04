@@ -30,9 +30,9 @@ $mensaje = "<b>Contactado por:</b> $nombre <br> <b>Nombre de su hijo/a:</b> $hij
 $email = "no-reply@c2090526.ferozo.com";
 
 // Datos de la cuenta de correo utilizada para enviar vía SMTP
-$smtpHost = "c2090526.ferozo.com";  // Dominio alternativo brindado en el email de alta
-$smtpUsuario = "no-reply@c2090526.ferozo.com";  // Mi cuenta de correo
-$smtpClave = "CRi8iJKb3z";  // Mi contraseña
+$smtpHost = "";  // Dominio alternativo brindado en el email de alta
+$smtpUsuario = "";  // Mi cuenta de correo
+$smtpClave = "";  // Mi contraseña
 
 // Email donde se enviaran los datos cargados en el formulario de contacto
 $emailDestino = "info@danilahs.com.ar";
